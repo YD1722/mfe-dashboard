@@ -1,10 +1,10 @@
-name: container-build-plan
+name: COntainer CI
+
 on:
   push:
-    branches:
-      -main
-    paths:
-      -'packages/container/**'
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 defaults:
   run:
@@ -12,7 +12,9 @@ defaults:
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
       - run: npm install
