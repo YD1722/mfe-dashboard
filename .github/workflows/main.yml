@@ -1,4 +1,4 @@
-name: dnfe-container-build-plan
+name: container-build-plan
 on:
   push:
     branches:
