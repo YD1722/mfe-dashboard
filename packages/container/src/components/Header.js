@@ -79,7 +79,7 @@ export default function Header({ signedIn, onSignOut }) {
             component={RouterLink}
             to="/"
           >
-            MFE -demo
+            MFE
           </Typography>
           <Button
             color="primary"
