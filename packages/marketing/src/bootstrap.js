@@ -1,9 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { createBrowserHistory } from "history";
 import App from "./App";
 
 const mount = (el) => {
-  ReactDOM.render(<App />, el);
+  const history = createBrowserHistory();
+
+  ReactDOM.render(<App history={history} />, el);
 };
 
 if (process.env.NODE_ENV === "development") {
